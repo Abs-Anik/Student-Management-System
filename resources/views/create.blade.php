@@ -1,6 +1,7 @@
 @extends('master')
 
 @section('content')
+    <h2> Create New Student </h2>
     <form action="{{ route('store') }}" method="post">
         @csrf
         <div class="form-group">
