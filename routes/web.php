@@ -20,3 +20,6 @@ Route::get('/edit/{id}','StudentController@edit')->name('edit');
 Route::post('/store','StudentController@store')->name('store');
 Route::post('/update/{id}','StudentController@update')->name('update');
 Route::post('/delete/{id}','StudentController@delete')->name('delete');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
